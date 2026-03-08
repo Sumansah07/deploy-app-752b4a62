@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: app-752b4a62
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: VITE_PROJECT_ID
+        value: 9b5c13e0-72ee-4355-b94d-54f80755b45f
